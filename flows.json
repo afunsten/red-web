@@ -12,8 +12,8 @@
         "z": "5eb134c9d62fdcd4",
         "name": "snake",
         "template": "\n    <g class=\"snake\" width=\"16px\" height=\"16px\" transform-origin=\"8 8\">\n        <circle class=\"main\" cx=\"8\" cy=\"8\" r=\"7\" fill=\"green\" stroke=\"none\"></circle>\n        <rect class=\"main\" x=\"8\" y=\"1\" width=\"8\" height=\"14\" fill=\"green\" stroke=\"none\"></rect>\n        <circle class=\"eyes\" cx=\"6\" cy=\"6\" r=\"1\" fill=\"red\" stroke=\"none\"></circle>\n        <circle class=\"eyes\" cx=\"6\" cy=\"10\" r=\"1\" fill=\"red\" stroke=\"none\"></circle>\n    </g>",
-        "x": 130,
-        "y": 1000,
+        "x": 390,
+        "y": 260,
         "wires": [
             [
                 "977009085c6e6eea",
@@ -27,8 +27,8 @@
         "z": "5eb134c9d62fdcd4",
         "name": "apple",
         "template": "\n    <g class=\"apple\" width=\"16px\" height=\"16px\">\n        <circle cx=\"8\" cy=\"8\" r=\"5\" fill=\"red\" stroke=\"#700\" stroke-width=\"1\"></circle>\n    </g>\n",
-        "x": 130,
-        "y": 940,
+        "x": 390,
+        "y": 200,
         "wires": [
             [
                 "7accd9e3886b1da9"
@@ -49,8 +49,8 @@
         "drawx": "0",
         "drawy": "0",
         "template": "<pattern x=\"0\" y=\"0\"\nwidth=\"16\" height=\"16\"\npatternUnits=\"userSpaceOnUse\">\n    <rect width=\"16\" height=\"16\" fill=\"black\" stroke=\"darkgrey\"></rect>\n    <circle cx=\"8\" cy=\"8\" r=\"0.5\" fill=\"lightgrey\"></circle>\n</pattern>",
-        "x": 110,
-        "y": 20,
+        "x": 150,
+        "y": 40,
         "wires": [
             [
                 "338c21620f7d6183"
@@ -74,7 +74,7 @@
         "onceDelay": 0.1,
         "topic": "left",
         "x": 90,
-        "y": 540,
+        "y": 400,
         "wires": [
             [
                 "49c0c4a3ca2d5273"
@@ -98,7 +98,7 @@
         "onceDelay": 0.1,
         "topic": "right",
         "x": 190,
-        "y": 540,
+        "y": 400,
         "wires": [
             [
                 "49c0c4a3ca2d5273"
@@ -123,7 +123,7 @@
         "topic": "up",
         "payloadType": "str",
         "x": 150,
-        "y": 480,
+        "y": 340,
         "wires": [
             [
                 "49c0c4a3ca2d5273"
@@ -147,7 +147,7 @@
         "onceDelay": 0.1,
         "topic": "down",
         "x": 150,
-        "y": 600,
+        "y": 460,
         "wires": [
             [
                 "49c0c4a3ca2d5273"
@@ -166,7 +166,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 540,
+        "y": 400,
         "wires": [
             [
                 "c5376caf974b7388"
@@ -192,8 +192,8 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotate": "",
-        "x": 260,
-        "y": 940,
+        "x": 520,
+        "y": 200,
         "wires": [
             [
                 "c035ef3687da22d4"
@@ -206,8 +206,8 @@
         "z": "5eb134c9d62fdcd4",
         "name": "",
         "query": "rect",
-        "x": 820,
-        "y": 940,
+        "x": 740,
+        "y": 120,
         "wires": [
             [
                 "768fa0e374c3aec5"
@@ -231,8 +231,8 @@
         "onceDelay": 0.1,
         "topic": "init",
         "payloadType": "str",
-        "x": 90,
-        "y": 860,
+        "x": 350,
+        "y": 120,
         "wires": [
             [
                 "ae2db7a987e6e65b"
@@ -249,8 +249,8 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotate": "0",
-        "x": 280,
-        "y": 980,
+        "x": 540,
+        "y": 240,
         "wires": [
             [
                 "fc94e183824253fb"
@@ -267,8 +267,8 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotate": "180",
-        "x": 280,
-        "y": 1020,
+        "x": 540,
+        "y": 280,
         "wires": [
             [
                 "cccf7be5e7ad8a4e"
@@ -286,8 +286,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 190,
-        "y": 900,
+        "x": 450,
+        "y": 160,
         "wires": [
             [
                 "88c1140427fd8715",
@@ -301,8 +301,8 @@
         "z": "5eb134c9d62fdcd4",
         "name": "",
         "class": "body",
-        "x": 660,
-        "y": 980,
+        "x": 920,
+        "y": 240,
         "wires": [
             [
                 "c035ef3687da22d4"
@@ -320,8 +320,8 @@
         "syntax": "plain",
         "template": "\n.board.gameover .snake .main{\n    fill:red;\n}\n.board.gameover .snake .eyes{\n    fill:white;\n}\n\n.arrow.pressed rect{\n    fill:#FD3;\n    stroke: black;\n}\n.arrow.pressed path{\n    fill: black;\n    stroke: black;\n}\n.snake.body .eyes{\n    visibility:hidden;\n}\n.snake.body .emoji{\n    visibility:hidden;\n}\n.board.longmode .snake *{\n    fill:blue;\n}\n.debugtext{\n    fill:white;\n    font-size:14px;\n}\n.data .label{\n    display:inline-block;\n    min-width:70px;\n}\n.data .out{\n    display:inline-block;\n    font-family:monospace;\n    min-width:30px;\n    height:15px;\n    text-align:center;\n    background:black;\n    border:2px solid grey;\n    color: #0FF;\n}\n.faceplate{\n    font-size:0.4em;\n    display:inline-block;\n}\n.faceplate .out{\n    height: 8px;\n    margin: 1px;\n    border: 0;\n}\n.faceplate h5{\n    text-align:center\n}\n#container-left{\n    width:200px;\n}\n#container-right{\n    background:#EEE;\n}",
         "output": "str",
-        "x": 670,
-        "y": 800,
+        "x": 730,
+        "y": 40,
         "wires": [
             [
                 "e50538ed952cfc43"
@@ -339,8 +339,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 800,
+        "x": 880,
+        "y": 40,
         "wires": [
             []
         ]
@@ -356,8 +356,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 530,
-        "y": 800,
+        "x": 590,
+        "y": 40,
         "wires": [
             [
                 "acb030e543525479"
@@ -370,8 +370,8 @@
         "z": "5eb134c9d62fdcd4",
         "name": "",
         "class": "head",
-        "x": 660,
-        "y": 1020,
+        "x": 920,
+        "y": 280,
         "wires": [
             [
                 "c035ef3687da22d4"
@@ -391,7 +391,7 @@
         "topic": "",
         "payloadType": "str",
         "x": 430,
-        "y": 640,
+        "y": 500,
         "wires": [
             [
                 "4b99608a1950ee3e"
@@ -410,7 +410,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 640,
+        "y": 500,
         "wires": [
             []
         ]
@@ -422,7 +422,7 @@
         "name": "snake",
         "template": "\n    <g class=\"snake\" width=\"16px\" height=\"16px\" transform-origin=\"8 8\">\n        <circle class=\"main\" cx=\"8\" cy=\"8\" r=\"7\" fill=\"green\" stroke=\"none\"></circle>\n        <rect class=\"main\" x=\"8\" y=\"1\" width=\"8\" height=\"14\" fill=\"green\" stroke=\"none\"></rect>\n        <circle class=\"eyes\" cx=\"6\" cy=\"6\" r=\"1\" fill=\"red\" stroke=\"none\"></circle>\n        <circle class=\"eyes\" cx=\"6\" cy=\"10\" r=\"1\" fill=\"red\" stroke=\"none\"></circle>\n    </g>",
         "x": 570,
-        "y": 520,
+        "y": 380,
         "wires": [
             [
                 "18fb94c7393dea28"
@@ -440,7 +440,7 @@
         "scaleY": 1,
         "rotate": "0",
         "x": 700,
-        "y": 520,
+        "y": 380,
         "wires": [
             [
                 "2709b3430589214d"
@@ -454,7 +454,7 @@
         "name": "snake",
         "template": "\n    <g class=\"snake\" width=\"16px\" height=\"16px\" transform-origin=\"8 8\">\n        <circle class=\"main\" cx=\"8\" cy=\"8\" r=\"7\" fill=\"green\" stroke=\"none\"></circle>\n        <rect class=\"main\" x=\"8\" y=\"1\" width=\"8\" height=\"14\" fill=\"green\" stroke=\"none\"></rect>\n        <circle class=\"eyes\" cx=\"6\" cy=\"6\" r=\"1\" fill=\"red\" stroke=\"none\"></circle>\n        <circle class=\"eyes\" cx=\"6\" cy=\"10\" r=\"1\" fill=\"red\" stroke=\"none\"></circle>\n    </g>",
         "x": 590,
-        "y": 580,
+        "y": 440,
         "wires": [
             [
                 "a313f9d81efa9b1d"
@@ -472,7 +472,7 @@
         "scaleY": 1,
         "rotate": "0",
         "x": 720,
-        "y": 580,
+        "y": 440,
         "wires": [
             [
                 "250c312ac8c52f8e"
@@ -490,8 +490,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 20,
+        "x": 360,
+        "y": 40,
         "wires": [
             []
         ]
@@ -507,8 +507,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 980,
+        "x": 720,
+        "y": 240,
         "wires": [
             [
                 "250c312ac8c52f8e"
@@ -526,8 +526,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1020,
+        "x": 720,
+        "y": 280,
         "wires": [
             [
                 "2709b3430589214d"
@@ -545,8 +545,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
-        "y": 320,
+        "x": 260,
+        "y": 540,
         "wires": [
             [
                 "49c0c4a3ca2d5273"
@@ -564,8 +564,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 110,
-        "y": 300,
+        "x": 90,
+        "y": 520,
         "wires": [
             [
                 "4586971d22bd8eef"
@@ -584,7 +584,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 700,
+        "y": 560,
         "wires": [
             [
                 "1aa803c038da67b5"
@@ -603,7 +603,7 @@
         "finalize": "",
         "libs": [],
         "x": 730,
-        "y": 700,
+        "y": 560,
         "wires": [
             [
                 "ae2db7a987e6e65b"
@@ -636,8 +636,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 1060,
+        "x": 210,
+        "y": 300,
         "wires": [
             []
         ]
@@ -658,8 +658,8 @@
         "once": true,
         "onceDelay": "2",
         "topic": "start",
-        "x": 110,
-        "y": 360,
+        "x": 90,
+        "y": 580,
         "wires": [
             [
                 "4586971d22bd8eef"
@@ -682,8 +682,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "stop",
-        "x": 110,
-        "y": 400,
+        "x": 90,
+        "y": 620,
         "wires": [
             [
                 "4586971d22bd8eef"
