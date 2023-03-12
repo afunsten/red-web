@@ -31,7 +31,15 @@
 </head>
 <body spellcheck="false">
 <div id="red-ui-editor"></div>
-<script src="flows.json" type="text/json" id="defaultFlow"></script>
+
+<script>
+  fetch('./flows.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+</script>
+  
+<script type="text/json" id="defaultFlow"></script>
+
 <script src="vendor/vendor.js"></script>
 <script src="red/custom.js"></script>
 <script src="red/red.min.js"></script>
