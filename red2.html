@@ -35,7 +35,7 @@
 <script>
   fetch('flows.json')
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => document.getElementById("defaultFlow").innerHTML = json );
 </script>
   
 <script type="text/json" id="defaultFlow"></script>
