@@ -33,9 +33,9 @@
 <div id="red-ui-editor"></div>
 
 <script>
-  fetch('./flows.json')
+  fetch('flows.json')
     .then((response) => response.json())
-    .then((json) => console.log("{ \"data\":" + json + "}"));
+    .then((json) => console.log(json));
 </script>
   
 <script type="text/json" id="defaultFlow"></script>
