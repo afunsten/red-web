@@ -1,5 +1,3 @@
-# snake AI
+# red-web
 
-Current demo: https://mdkrieg.github.io/snakeAI/red.html
-
-Inspired by this video: https://www.youtube.com/watch?v=TOpBcfbAgPg
+Current demo: https://afunsten.github.io/red-web/red.html
